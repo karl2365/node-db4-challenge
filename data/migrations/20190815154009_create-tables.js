@@ -12,6 +12,7 @@ exports.up = function(knex) {
         tbl.text('name', 128)
             .unique()
             .notNullable();
+        tbl.decimal('qty');
     })
     .createTable('instruction', tbl => {
         tbl.increments();
