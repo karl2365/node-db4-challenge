@@ -6,6 +6,6 @@ const server = express();
 
 server.use(express.json());
 
-server.use('/api/recipe', recipeRouter);
+server.use('/api/recipes', recipeRouter);
 
 module.exports = server;
